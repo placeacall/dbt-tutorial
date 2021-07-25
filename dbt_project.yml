@@ -33,7 +33,4 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 models:
   jaffe_shop:
-    +materialized: view
-    # Applies to all files under models/example/
-    example:
-        materialized: view
+    +materialized: table
